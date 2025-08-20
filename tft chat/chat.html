@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFT Duo Chat</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <div class="chat-overlay">
+        <div class="chat-header draggable">
+            <div class="header-content">
+                <img src="https://placehold.co/24x24/1a1a2e/ffffff?text=TFT" alt="Logo" class="logo-icon">
+                <div class="room-info">
+                    <span id="roomName">TFT Duo Chat</span>
+                    <div id="typingIndicator" class="typing-indicator hidden">
+                        <span>Digitando...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-controls">
+                <button id="minimizeBtn"><svg viewBox="0 0 24 24"><path d="M20 12H4"/></svg></button>
+                <button id="closeBtn"><svg viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg></button>
+            </div>
+        </div>
+        
+        <div id="chatMessages" class="chat-messages">
+            <!-- Mensagens serão adicionadas aqui dinamicamente -->
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Digite sua mensagem...">
+            <button id="sendBtn">
+                <svg viewBox="0 0 20 20">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
