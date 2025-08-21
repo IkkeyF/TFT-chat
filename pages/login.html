@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TFT Duo Chat</title>
+    <link rel="stylesheet" href="../assets/css/globals.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Login</h2>
+        
+        <form id="loginForm">
+            <label for="username">Nome de Invocador</label>
+            <input type="text" id="username" required>
+        
+            <label for="password">Senha</label>
+            <input type="password" id="password" required>
+
+            <label class="checkbox-login-label">
+                <input type="checkbox" id="remember">
+                Lembrar de mim
+                <a href="#" class="text-link">Esqueceu a senha?</a>
+            </label>
+
+            <button type="submit" class="btn-primary">Entrar</button> 
+        </form>
+
+        <p class="auth-footer">Não tem conta? <a href="register.html" class="text-link">Cadastre-se</a></p>
+    </div>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

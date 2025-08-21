@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - TFT Duo Chat</title>
+    <link rel="stylesheet" href="../assets/css/globals.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Criar Conta</h2>
+        
+        <form id="registerForm">
+            <label for="summonerName">Nome de Invocador</label>
+            <input type="text" id="summonerName" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            
+            <label for="regPassword">Senha</label>
+            <input type="password" id="regPassword" required>
+        
+            <label for="confirmPassword">Confirmar Senha</label>
+            <input type="password" id="confirmPassword" required>
+
+            <label class="checkbox-register-label">
+                <input type="checkbox" id="terms" required> 
+                Eu concordo com os <a href="#" class="text-link">Termos de Serviço</a>
+            </label>
+
+            <button type="submit" class="btn-primary">Criar Conta</button>
+        </form>
+
+        <p class="auth-footer">Já tem conta? <a href="login.html" class="text-link">Faça login</a></p>
+    </div>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>
